@@ -24,7 +24,13 @@ $( document ).ready(function() {
 	.mouseup(function() {
 			$('.ryu-ready').show();
 			$('.ryu-throwing').hide();
-	});
+	})
+	.keydown(function (){
+			$('.ryu-cool').show();
+	})
+
+
+
 
 function playHadouken () {
   $('#hadouken-sound')[0].volume = 0.5;
