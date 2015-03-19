@@ -56,3 +56,26 @@ background-image: url('../images/ryu-cool.gif');
 	z-index: 10;
 	margin-top: 160px;
 }
+
+.click {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 28px;
+	line-height: 1.1em;
+	width: 300px;
+	float: left;
+	top: 160px;
+	left: 650px;
+	position: absolute;
+}
+
+.x-key {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 28px;
+	line-height: 1.1em;
+	width: 300px;
+	float: left;
+	top: 300px;
+	left: 800px;
+	position: absolute;
+}
+
