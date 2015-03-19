@@ -21,23 +21,29 @@ $(document).ready(function() {
 				}
 			);
 	})
-
-	.mouseup(function() {
-			$('.ryu-ready').show();
-			$('.ryu-throwing').hide();
-			//$('.hadouken').hide();
-	})
-	
-	.keydown(function () {
-		$('.ryu-still').hide();
-		$('.ryu-cool').show();
-	})
-	.keyup(function () {
-		$('.ryu-still').show();
-		$('.ryu-cool').hide();
+	.mouseup(
+		function() {
+		$('.ryu-ready').show();
+		$('.ryu-throwing').hide();
 	})
 
 });
+
+$(document)
+	.keydown(function (e) {
+		if (e.which == 88) {
+		$('.ryu-ready').hide();
+		$('.ryu-still').hide();
+		$('.ryu-cool').show();
+		}
+	})
+	.keyup(function (e) {
+		if (e.which == 88) {
+		$('.ryu-ready').hide();
+		$('.ryu-still').show();
+		$('.ryu-cool').hide();			
+		}
+	})
 
 
 function playHadouken () {
